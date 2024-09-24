@@ -1,0 +1,66 @@
+/* _________________________________________________________________ */
+/* Formatando Páginas internas */
+
+.conteudo {
+  /* Define a cor de fundo e arredonda os cantos da área de conteúdo */
+  background-color: whitesmoke;
+  padding: 0.7rem;
+  border-radius: 7px;
+}
+
+table,
+th,
+td {
+  /* Define bordas nas tabelas e colapsa as bordas */
+  border: 2px solid black;
+  border-collapse: collapse; /* Junta as bordas */
+}
+
+table {
+  /* Define a largura máxima e centraliza a tabela */
+  width: 80%;
+  margin: auto;
+  max-width: 700px;
+}
+
+th {
+  /* Define a cor de fundo e texto para os cabeçalhos da tabela */
+  background-color: #000;
+  color: #fff;
+}
+
+td {
+  /* Define a cor de fundo para as células da tabela */
+  background-color: #fff;
+}
+
+th,
+td {
+  /* Define a largura das colunas e padding nas células */
+  width: 33%;
+  padding: 0.5rem;
+}
+
+/* Estilos para a primeira célula de cada linha */
+/* Deixa em letra maisuscula os nomes dos produtos da tabela */
+td:nth-child(1) {
+  text-transform: uppercase;
+}
+
+/* Centraliza o texto na segunda célula de cada linha */
+/* Deixa centralizado a coluna de prazo de entrega da tabela */
+td:nth-child(2) {
+  text-align: center;
+}
+
+/* Define a cor do texto para a terceira célula */
+/* Muda a cor do texto da coluna de valor aproximado da tabela */
+td:nth-child(3) {
+  color: blue;
+}
+
+caption {
+  /* Estilo para o título da tabela */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
